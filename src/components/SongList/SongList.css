@@ -1,28 +1,19 @@
-.root {
+.songList {
   display: flex;
-  height: 290px;
-  width: 100%;
-  overflow-x: scroll;
-  overflow-y: hidden;
-  margin-top: 20px;
-  background-color: rgba(0, 0, 0, 0.5);
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 10%;
 }
 
-.eachSong {
-  display: flex;
-  flex-direction: column;
+.songImage {
+  height: 13vh;
+  width: 9.5vw;
 }
-
-.image {
-  height: 150px;
-  width: 150px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
 .songDescription {
+  max-width: 10vw;
   justify-content: center;
   color: #d3d3d3;
-  font-size: 12px;
+  font-size: 10px;
   font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'sans-serif';
 }

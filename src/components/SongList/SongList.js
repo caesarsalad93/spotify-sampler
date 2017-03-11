@@ -5,9 +5,9 @@ const eachSong = (props) => {
   const { album, name } = props;
   const albumImage = album.images[0];
   return (
-    <div className={styles.eachSong}>
-      <img role="presentation" src={albumImage.url} className={styles.image} />
-      <span className={styles.songDescription}>Name: {name}</span>
+    <div className="eachSong">
+      <img role="presentation" src={albumImage.url} className="songImage" />
+      <span className="songDescription">Name: {name}</span>
     </div>
   );
 };
@@ -18,7 +18,7 @@ eachSong.propTypes = {
 };
 
 const SongList = (props) => (
-  <div className={styles.root}>
+  <div className="songList">
     {props.listOfSongs.map((songData, index) => <div
       key={songData.uri}
       onClick={() => props.selectSong(index)}

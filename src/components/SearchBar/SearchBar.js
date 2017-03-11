@@ -1,10 +1,10 @@
 import React, { PropTypes } from 'react';
-import styles from './SearchBar.css';
+import './SearchBar.css';
 
 const SearchBar = (props) => (
-  <div className={styles.root}>
-    <input className={styles.input} onChange={(e) => props.updateText(e.target.value)} />
-    <button className={styles.button} onClick={props.fetchSongs}>Get Songs</button>
+  <div className="root">
+    <input className="input" onChange={(e) => props.updateText(e.target.value)} placeholder="search" />
+    <button className="button" onClick={props.fetchSongs}>Get Songs</button>
   </div>
 );
 
