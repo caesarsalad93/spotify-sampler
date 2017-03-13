@@ -6,4 +6,4 @@ Axios is used to fetch results from the Spotify API.
 React is used to render the results.
 
 ## Check it out
-[View live](spotify-sampler.surge.sh)
+[View live](https://spotify-sampler.surge.sh)
