@@ -3,7 +3,6 @@ import styles from './SongItem.css';
 
 const SongItem = (props) => {
   const { songData } = props;
-  console.log(songData);
   const album = songData.album;
   const albumName = album.name;
   const albumImage = album.images[1];
@@ -11,7 +10,7 @@ const SongItem = (props) => {
     <div className="songItem">
       <div className="album">
         <img role="presentation" src={albumImage.url} className="songItemImage"/>
-        <audio controls duration src={songData.preview_url} />
+        <audio controls src={songData.preview_url} />
         <div>
           <span className="albumName">Album: {albumName}</span>
           <div className="songName">Name: {songData.name} </div>
